@@ -34,7 +34,7 @@ public class Transpile {
 
    // Key is the class name, value is corresponding AST
    private static Map<String, ASTCompilationUnit> ASTMap          = new TreeMap<String, ASTCompilationUnit>();
-   private static Logger                          logger          = Logger.getLogger(PoorFlyingBaldGuy.class);
+   private static Logger                          logger          = Logger.getLogger(Transpile.class);
    private static SPLParser                       parser          = null;
 
    // program arguments
@@ -152,7 +152,7 @@ public class Transpile {
       String version = bundle.getString("project.version");
       logger.error("SPLTranslate v" + version + " - Informix v11.7 Stored Procedure Langauge (SPL) to Java Translation Tool");
       logger.error("");
-      logger.error("Usage:  java " + PoorFlyingBaldGuy.class.getName() + " inputDir outputPackage [sqlExtensions=true]");
+      logger.error("Usage:  java " + Transpile.class.getName() + " inputDir outputPackage [sqlExtensions=true]");
       logger.error("\t\tinputDir\t- The source directory to translate");
       logger.error("\t\toutputPackage\t- The Java package to store the translated source code");
       logger.error("\t\tsqlExtensions\t- Default true. Enables or disables processing files without a .sql extension");
