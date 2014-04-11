@@ -274,9 +274,9 @@ public class SPLPrinterVisitor implements SPLParserVisitor {
       buffer.append("import org.joda.time.LocalDate;");
       nl.write();
       nl.write();
-      buffer.append("import com.choicehotels.cis.spl.AbstractProcedure;");
+      buffer.append("import com.xerxes500.transpile.AbstractProcedure;");
       nl.write();
-      buffer.append("import com.choicehotels.cis.spl.ProcedureException;");
+      buffer.append("import com.xerxes500.transpile.ProcedureException;");
       nl.write();
       nl.write();
       buffer.append("public class ").append(className).append(" extends AbstractProcedure {");
