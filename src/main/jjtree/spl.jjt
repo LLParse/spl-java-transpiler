@@ -4,7 +4,7 @@ options
 
 PARSER_BEGIN(SPLParser)
 
-package com.dontexist.morals.splparser;
+package com.xerxes500.transpiler.splparser;
 
 public class SPLParser {
 }
